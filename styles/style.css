@@ -1,0 +1,118 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap'); */
+
+
+.quicksand-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: ;
+    font-style: normal;
+}
+
+/* shared styles */
+.orange {
+    color: rgb(254, 163, 1);
+}
+
+
+
+
+
+
+/* navbar related styles */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    width: 62px;
+    height: 62px;
+    padding-right: 11px;
+}
+
+li>a {
+    text-decoration: none;
+
+}
+
+.nav-link {
+    list-style: none;
+}
+
+.link1 {
+    color: rgb(254, 163, 1);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.link2 {
+    color: rgb(1, 172, 253);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.link3 {
+    color: rgb(5, 212, 223);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.link4 {
+    color: rgb(93, 88, 239);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.nav-btn {
+    width: 197px;
+    height: 50px;
+    padding: 10px 60px;
+    border-radius: 12px;
+    background: rgb(254, 163, 1);
+    font-family: Quicksand;
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 30px;
+    border: none;
+}
+
+.fa-solid {
+    display: none;
+
+}
+
+
+
+
+@media screen and (max-width:576px) {
+
+    .nav-links,
+    .nav-btn {
+        display: none;
+    }
+
+    .fa-solid {
+        display: flex;
+        align-items: center;
+        width: 30px;
+    }
+
+}
