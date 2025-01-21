@@ -94,7 +94,7 @@ li>a {
     border: none;
 }
 
-.fa-solid {
+.menu-bar {
     display: none;
 }
 
@@ -106,9 +106,10 @@ li>a {
         display: none;
     }
 
-    .fa-solid {
+    .menu-bar {
         display: block;
-        width: 30px;
+        width: 50px;
+        font-size: 40px;
     }
 
 }
@@ -235,7 +236,7 @@ li>a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
+    margin-bottom: 80px;
 }
 
 .curriculum-card {
@@ -316,9 +317,7 @@ li>a {
 }
 
 
-
-
-.pre-next {
+/* .pre-next {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -340,12 +339,20 @@ li>a {
     justify-content: center;
     flex-direction: row;
     color: white;
+}*/
+
+
+.pre-next-icon {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 30px;
 }
 
-.pre-next:hover {
+.pre-next-icon:hover {
     cursor: pointer;
 }
-
 
 
 
@@ -368,8 +375,54 @@ li>a {
         gap: 20px;
     }
 
-    #previous,
+    /* #previous,
     #next {
         display: none;
+    } */
+    .pre-next-icon {
+        display: none;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.stories {
+    background: url(../assets/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+}
+
+.story-title {
+    text-align: center;
+}
+
+.story-container {
+    max-width: 1140px;
+    margin: 130px auto;
+    display: flex;
+    gap: 20px;
+}
+
+
+.main-story {
+    max-width: 540px;
+}
+
+.sub-story {
+    max-width: 601px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
