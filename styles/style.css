@@ -738,8 +738,9 @@ footer {
 marquee {
     padding: 5px;
     font-size: 20px;
+    font-weight: 500;
     color: white;
-    background-color: red;
+    background-color: rgb(211, 0, 0);
 }
 
 
@@ -847,4 +848,5 @@ footer a {
         gap: 30px;
         padding: 20px;
     }
+
 }
