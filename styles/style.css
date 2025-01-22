@@ -16,9 +16,14 @@
 
 body {
     margin: 0;
+    margin-top: 20px;
 }
 
-
+@media screen and (max-width: 576px) {
+    body {
+        margin-top: 0;
+    }
+}
 
 
 
@@ -608,7 +613,15 @@ li>a {
 
 
 
+
+
+
 @media screen and (max-width: 576px) {
+    .stories {
+        margin: 0;
+        height: 760px;
+    }
+
     .main-story {
         display: none;
     }
@@ -622,12 +635,10 @@ li>a {
     .sub-story2,
     .sub-story3,
     .sub-story4 {
-
         width: 50%;
         position: relative;
-        width: 173.09px;
-        height: 179.59px;
-
+        width: 173px;
+        height: 200px;
     }
 
     .sub-story1 img,
@@ -635,21 +646,33 @@ li>a {
     .sub-story3 img,
     .sub-story4 img {
         width: 100%;
+
     }
 
     .sub-story-date,
     .sub-story-date2 {
+
         position: absolute;
         width: 103.91px;
         height: 12px;
         left: 22.83px;
-        top: 93.96px;
+        /* top: 88px; */
         border-radius: 28.54px;
-
         font-size: 10px;
         font-weight: 500;
-
         padding: 10px;
+    }
+
+    .sub-story-date {
+        top: 90px;
+    }
+
+    .sub-story-date2 {
+        top: 88px;
+    }
+
+    .no4 {
+        top: 92px;
     }
 
     .sub-story-description {
@@ -657,15 +680,16 @@ li>a {
         font-weight: 700;
         width: 107.92px;
         height: 28.54px;
-        /* left: 0; */
-        /* top: 2.85px; */
+        top: 2.85px;
         display: flex;
         flex-direction: row;
         align-items: center;
+        line-height: 14px;
+    }
 
-        /* padding-top: 20px; */
-        /* padding-bottom: ; */
 
+    .story-btn {
+        margin: 0;
     }
 
 }
@@ -695,7 +719,7 @@ footer {
 
 }
 
-.target {
+marquee {
     padding: 5px;
     font-size: 20px;
     color: white;
